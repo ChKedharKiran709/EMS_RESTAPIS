@@ -163,8 +163,8 @@ public class Employee {
 /* JSON file for postMapping
 {
         "id": 1,
-        "name": "Kedhar Kiran",
-        "email": "john.doe@example.com",
+        "name": " Ch Kedhar Kiran",
+        "email": "chkedharkiran@gmail.com",
         "phone": "+1234567890",
         "designation": "Software Engineer",
         "department": "IT",
@@ -172,10 +172,10 @@ public class Employee {
         "salary": 75000.00,
         "dob": "1990-05-10",
         "gender": "Male",
-        "address": "123 Main Street, City, Country",
+        "address": "Bengaluru,India",
         "employmentType": "Full-Time",
         "managerId": 101,
-        "location": "New York Office",
+        "location": "Bengaluru Office",
         "status": "Active",
         "profilePictureUrl": "http://example.com/images/john_doe.jpg"
         }

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Employee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        :root {
+            --primary-color: #e74c3c;
+            --secondary-color: #f39c12;
+            --background-color: #f4f7f9;
+            --text-color: #333;
+            --input-bg: #fff;
+            --input-border: #e0e0e0;
+            --input-focus: #e74c3c;
+            --button-hover: #c0392b;
+            --back-button: #f39c12;
+            --back-button-hover: #e08d0e;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            background-color: var(--input-bg);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px auto;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        form {
+            display: grid;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+
+        input {
+            padding: 12px;
+            border: 1px solid var(--input-border);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background-color: var(--input-bg);
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--input-focus);
+            box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
+        }
+
+        button {
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .delete-btn {
+            background-color: var(--primary-color);
+        }
+
+        .delete-btn:hover {
+            background-color: var(--button-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .delete-btn:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+
+        .back-btn {
+            background-color: var(--back-button);
+            margin-top: 20px;
+        }
+
+        .back-btn:hover {
+            background-color: var(--back-button-hover);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Delete Employee Section</div>
+    <div class="container">
+        <h1>Delete Employee</h1>
+        <form id="deleteEmployeeForm">
+            <div class="form-group">
+                <label for="id"><i class="fas fa-id-card icon"></i>ID</label>
+                <input type="number" id="id" name="id" placeholder="Enter Employee ID" required>
+            </div>
+
+            <button type="submit" class="delete-btn"><i class="fas fa-trash icon"></i> Delete</button>
+        </form>
+        <button class="back-btn" onclick="window.location.href='adminButtons.html'"><i class="fas fa-arrow-left"></i> Back</button>
+    </div>
+</body>
+</html>
